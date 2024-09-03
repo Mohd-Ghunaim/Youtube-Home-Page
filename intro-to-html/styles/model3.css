@@ -1,0 +1,21 @@
+
+.model-text {
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.link-text {
+    font-family: Montserrat;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.details {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0px;
+}

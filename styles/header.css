@@ -1,0 +1,188 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(213, 213, 213);
+    z-index: 100;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.right-section {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.search-bar {
+    flex: 1;
+    height: 40px;
+    padding-left: 16px;
+    font-size: 16px;
+    border: 1px solid rgb(192,192,192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px
+    rgba(0,0,0,0.05);
+    width: 0;
+}
+.search-bar::placeholder {
+    font-family: Roboto,Arial;
+}
+.burger-menu {
+    height: 25px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+.youtube-icon {
+    height: 85px;
+}
+.search-button {
+    height: 44px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: -1px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tool-tip,
+.voice-search-button .tool-tip,
+.create-button-container .tool-tip,
+.apps-button-container .tool-tip,
+.profile-button-container .tool-tip,
+.notifications-button-container .tool-tip {    
+    position: absolute;
+    background-color: gray;
+    color: white;
+    font-family: Roboto,Arial;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.youtube-home-button .tool-tip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    font-family: Roboto,Arial;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    margin-left: 16px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.profile-button-container .tool-tip {
+    margin-right: 30px;
+}
+.search-button:hover .tool-tip,
+.voice-search-button:hover .tool-tip,
+.create-button-container:hover .tool-tip,
+.apps-button-container:hover .tool-tip,
+.profile-button-container:hover .tool-tip,
+.notifications-button-container:hover .tool-tip, 
+.youtube-home-button:hover .tool-tip {
+    opacity: 1;
+}
+.search-button-pic {
+    height: 18px;
+}
+.search-button,
+.voice-search-button,
+.create-button-container,
+.apps-button-container,
+.profile-button-container,
+.notifications-button-container, 
+.youtube-home-button {
+    position: relative;
+}
+.voice-search-button {
+    background-color: rgb(240, 240, 240);
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voice-search-button-pic {
+    height: 20px;
+}
+.create-button {
+    height: 18px;
+}
+.create-button-container,
+.notifications-button-container,
+.profile-button-container,
+.apps-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apps-button {
+    height: 30px;
+}
+.notifications-button {
+    height: 30px;
+}
+.notifications-button-count {
+    position: relative;
+}
+.notifications-count {
+    position: absolute;
+    top: -3px;
+    right: -2px;
+    border-radius: 50%;
+    background-color: rgb(206, 0, 0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 5px;
+}
+.profile-button {
+    height: 37px;
+    margin-right: 30px;
+    border-radius: 50%;
+}

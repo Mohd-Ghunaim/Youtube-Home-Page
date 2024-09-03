@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Purple Console</title>
+        <style>
+            .console {
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(145, 31, 145);
+                height: 46px;
+            }
+            .left {
+                color: white;
+                padding-left: 15px;
+                padding-top: 16px;
+                font-family: roboto,arial;
+                font-weight: 600;
+                font-size: small;
+            }
+            .middle {
+                padding-top: 8px;
+                flex: 1;
+                max-width: 620px;
+            }
+            .search-bar {
+                border-radius: 30px;
+                height: 30px;
+                width: 100%;
+                padding-left: 20px;
+                border-color: transparent;
+            }
+            .right {
+                padding-top: 8px;
+                padding-right: 6px;
+            }
+            .download {
+                background-color: rgb(145, 31, 145);
+                color: white;
+                border-width: 1px;
+                border-color: white;
+                height: 30px;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="console">
+            <div class="left">Home</div>
+            <div class="middle"><input class="search-bar" type="search" placeholder="Search"></div>
+            <div class="right"><button class="download">Download</button></div>
+        </div>
+    </body>
+</html>

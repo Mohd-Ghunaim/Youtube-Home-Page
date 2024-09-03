@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Discord Side Bar</title>
+    <style>
+        .first-bar {
+            display: flex;
+            flex-direction: column;
+
+            width: 80px;
+            background-color: rgb(27, 27, 27);
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+        }
+        .second-bar {
+            display: flex;
+            flex-direction: column;
+
+            width: 200px;
+            background-color: rgb(47, 47, 47);
+
+            left: 80px;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+        }
+        .garfield-pic {
+            width: 60px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 17px;
+        }
+        .zazzles-pic,.alfred-pic {
+            width: 60px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 7px;
+        }
+        .first-block {
+            display: flex;
+            justify-content: space-between;
+            width: 160px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: center;
+        }
+        .info {
+            font-family: Roboto,Arial;
+            color: white;
+            font-weight: 600;
+        }
+        .plus {
+            font-family: Roboto,Arial;
+            color: rgb(129, 129, 129);
+            font-weight: 600;
+            font-size: x-large;
+        }
+        .second-channel,.third-channel,.fourth-channel {
+            font-family: Roboto,Arial;
+            color:rgb(129, 129, 129);
+            padding-top: 20px;
+            padding-left: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="first-bar">
+            <img class="garfield-pic" src="intro-to-html/garfield.webp">
+            <img class="zazzles-pic" src="intro-to-html/zazzles.webp">
+            <img class="alfred-pic" src="intro-to-html/alfred.webp">
+        </div>
+        <div class="second-bar">
+            <div class="first-block">
+                <div class="info">INFO</div>
+                <div class="plus">+</div>
+            </div>
+            <div class="second-channel">#catpics</div>
+            <div class="third-channel">#updates</div>
+            <div class="fourth-channel">#faq</div>
+        </div>
+    </body>
+</html>

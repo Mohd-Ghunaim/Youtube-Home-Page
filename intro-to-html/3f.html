@@ -1,0 +1,73 @@
+<style>
+    .shoe-text {
+        font-size: large;
+        font-weight: bold;
+    }
+    .price-text {
+        color: green;
+        font-weight: bolder;
+    }
+    .link-text:hover {
+        color:orange
+    }
+    .cart-button {
+        width: 110px;
+        color: black;
+        border-radius: 14px;
+        height: 28px;
+        background-color: rgb(255, 213, 0);
+        border-color: rgba(255, 213, 0, 0);
+        margin-right: 8px;
+        cursor: pointer;
+        transition: background-color 0.15s,
+        opacity 0.15s;
+    }
+    .cart-button:hover {
+        background-color: rgb(232, 193, 0);
+    }
+    .cart-button:active {
+        opacity: 0.6;
+    }
+    .buy-button {
+        width: 110px;
+        color: black;
+        border-radius: 14px;
+        height: 28px;
+        background-color: rgb(255, 132, 0);
+        border-color: rgba(255, 213, 0, 0);
+        cursor: pointer;
+        transition: background-color 0.15s,
+        opacity 0.15s;
+    }
+    .buy-button:hover {
+        background-color: rgb(229, 122, 0);
+    }
+    .buy-button:active {
+        opacity: 0.6;
+    }
+</style>
+
+<body>
+    <a href="https://www.amazon.com/" target="_blank" class="link-text">
+        Back to Amazon
+    </a> 
+    <br><br>
+    <a class="shoe-text">
+        Nike Black Runing Shoes
+    </a>
+    <br><br>
+    <a class="price-text">
+        $39 - in stock.
+    </a>
+    <br><br>
+    <a>
+        Free deliver tomorrow.
+    </a>
+    <br><br>
+    <button class="cart-button">
+        Add to Cart
+    </button>
+    <button class="buy-button">
+        Buy now
+    </button>
+</body>

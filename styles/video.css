@@ -1,0 +1,115 @@
+.thumbnail {
+    width: 100%;
+}
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.youtuber-pic {
+    width: 45px;
+    border-radius: 50px;
+    height: 45px;
+}
+.thumbnail-row {
+    margin-bottom: 10px;
+    position: relative;
+}
+.video-title {
+    margin-top: 0px;
+    font-weight: 500;
+}
+.video-author,.video-stats {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(96,96,96);
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    font-family: Roboto, Arial;
+}
+@media ( max-width: 900px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media ( min-width: 1250px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media ( min-width: 901px) and ( max-width:1249px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
+    padding: 4px;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.video-text {
+    padding-left: 8px;
+}
+.vid-link {
+    text-decoration: none;
+    color: black;
+}
+.vid-link:hover {
+    text-decoration: underline;
+}
+.channel-pic {
+    position: relative;
+}
+.channel-pic .channel-tip {
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    bottom: -60px;
+    left: -10px;
+    margin-left: 10px;
+    font-family: Roboto,Arial;
+    width: 200px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 200;
+}
+.channel-pic:hover .channel-tip {
+    opacity: 1;
+}
+.channel-tip-img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.channel-tip-text {
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 30px;
+}
+.channel-tip-name {
+    font-weight: bold;
+    font-size: medium;
+}
+.channel-tip-sub {
+    color: gray;
+    font-size: 400;
+}
